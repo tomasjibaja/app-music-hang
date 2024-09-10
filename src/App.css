@@ -9,11 +9,11 @@
 
 .game-wrapper {
   width: 80vw;
-  height: 80vh;
+  height: 70vh;
   max-width: 900px;
   max-height: 700px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: center;
   gap: 30px;
   flex: 1;
@@ -126,4 +126,80 @@
   color: cadetblue;
   background-color: transparent;
   border-color: cadetblue;
+}
+
+
+@media (max-width: 1024px) {
+  .hang {
+    width: 20%;
+    padding: 10px;
+  }
+
+  .button-letter {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .hang-letter {
+    font-size: 35px;
+  }
+
+  .hang > .msg {
+    font-size: 25px;
+  }
+
+  .restart-btn {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .game-wrapper { 
+    flex-direction: column;
+    max-height: unset;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .board {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .board > h2 {
+    font-size: 18px;
+  }
+
+  .hang {
+    width: 20%;
+  }
+
+  .button-letter {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+  }
+
+  .letters-wrapper {
+    gap: 5px;
+    padding: 0;
+  }
+
+  .hang-letter {
+    font-size: 35px;
+  }
+
+  .hang > .msg {
+    width: 50vw;
+    height: 50px;
+    left: -50px;
+    line-height: 50px;
+    font-size: 25px;
+  }
+
+  .restart-btn {
+    font-size: 18px;
+  }
 }
